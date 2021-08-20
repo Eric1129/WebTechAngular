@@ -14,3 +14,13 @@ content.innerHTML = some_text
 // add an event listener to the button
 const handleButton = ()=>{console.log('clicked!')}
 btnDoStuff.addEventListener('click', handleButton)
+
+//fetching data from an API end point
+const getData = ()=>{
+    // NB fetch is asynchronous
+    fetch("http://example.com/movies.json").then(Response => Response.json())
+    .then(data => console.log(data))
+}
+
+btnGetAPI.addEventListener("click", getData)
+
