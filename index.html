@@ -14,8 +14,8 @@
         <h1>HTML, CSS and JavaScript</h1>
     </header>
     <nav>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Introduction_to_Web_development">documentation</a>
-        <a href="https://duckduckgo.com?q=AMZN stock price">Stock Price lookup</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Introduction_to_Web_development">documentation</a> |
+        <a href="https://duckduckgo.com?q=AMZN stock price">Stock Price lookup</a> | 
         <!-- Create a new web page called 'other.html' containing default content
             Make a hyperlink from 'index.html' to this new page -->
             <a href='./other.html'>other</a>
@@ -23,6 +23,7 @@
     <article>
         <section>
             <h2>Front-End Web Technologies</h2>
+            <button id="btnDoStuff">Go</button>
             <p>A web browser displays a web page using</p>
             <ul>
                 <li>HTML</li>
@@ -40,10 +41,11 @@
                 <p>A tag and all it's content is called an element</p>
                 <p>Tags may have attributes</p>
                 <!-- alt tag for assistive technologies -->
-                <img src='https://placekitten.com/240' alt='a kitten' title='a kitten' height='240' />
+                <img src='https://placekitten.com/240' alt='a kitten' title='a kitten' height='240'>
             </aside>
         </section>
         <section>
+            <!-- ooh not really wanting in-line CSS -->
             <h3 style="color: red;">CSS</h3>
             <p>Cascading Style Sheets bring style to the content</p>
             <ol>
@@ -57,14 +59,24 @@
             <p>ECMAScript runs in the browser. Since 2015 we have ES6+</p>
             <table>
                 <tr>
+                    <th>Idea</th><th>Example</th>
+                </tr>
+                <tr>
                     <td>let and const</td><td>let n = 1</td>
                 </tr>
                 <tr>
                     <td>functions</td><td>const fn = ()=>{}</td>
                 </tr>
+                <tr>
+                    <td>String Interpolation</td><td>`${n}`</td>
+                </tr>
+                <tr>
+                    <td>Injecting Content</td><td id="id1"></td>
+                </tr>
             </table>
         </section>
     </article>
-    <footer>&copy;2021 read our legal notice</footer>
+    <footer id="wibble" >&copy;2021 read our legal notice</footer>
+    <script src='./js/myscript.js'></script>
 </body>
 </html>
